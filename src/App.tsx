@@ -30,14 +30,14 @@ export default function App() {
             </div>
             <div className="row-span-2 h-[500px] rounded-md overflow-hidden">
               <img
-                src="https://warisannusantara.vercel.app/images/header/1.jpg"
+                src="https://i.pinimg.com/736x/b9/78/07/b978077a8ca10c45603baf9bd7581379.jpg"
                 alt=""
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="row-span-2 h-[500px] rounded-md overflow-hidden">
               <img
-                src="https://warisannusantara.vercel.app/images/header/1.jpg"
+                src="https://i.pinimg.com/564x/8f/47/ab/8f47abdb931c3b44f411c6bdf38dde00.jpg"
                 alt=""
                 className="w-full h-full object-cover"
               />
@@ -47,26 +47,30 @@ export default function App() {
           <div className="animate-scroll-to-b">
             <div className="h-[240px] -mt-52 rounded-md overflow-hidden">
               <img
-                src="https://warisannusantara.vercel.app/images/header/1.jpg"
+                src="https://i.pinimg.com/564x/48/a3/c3/48a3c30b3d068b7ef86c32f19d5ead3b.jpg"
                 alt=""
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="h-[240px] mt-5 rounded-md overflow-hidden">
               <img
-                src="https://warisannusantara.vercel.app/images/header/1.jpg"
+                src="https://i.pinimg.com/564x/fc/ce/06/fcce0689b975e499e970557f4596df58.jpg"
                 alt=""
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="h-[240px] mt-5 rounded-md overflow-hidden">
               <img
-                src="https://warisannusantara.vercel.app/images/header/1.jpg"
+                src="https://i.pinimg.com/564x/32/d6/4e/32d64e9f4ab70f413914976e48f8ae81.jpg"
                 alt=""
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="h-[240px] mt-5 rounded-md overflow-hidden">
               <img
-                src="https://warisannusantara.vercel.app/images/header/1.jpg"
+                src="https://i.pinimg.com/736x/45/1c/3a/451c3a2537616f5d5d06750972b5458e.jpg"
                 alt=""
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
