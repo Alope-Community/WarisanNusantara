@@ -2,7 +2,7 @@ import { IconSun } from "@irsyadadl/paranoid";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-white text-[#111] px-10 py-7 shadow">
+    <nav className="flex top-0 justify-between items-center bg-white text-[#111] px-10 py-7 shadow fixed left-0 right-0 z-30">
       <div>
         <h2 className="text-[#111] font-semibold text-xl">WARISAN NUSANTARA</h2>
       </div>
@@ -17,7 +17,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="">Destinati</a>
+            <a href="">Destinasi</a>
           </li>
           <li>
             <a href="">Jelajah</a>
