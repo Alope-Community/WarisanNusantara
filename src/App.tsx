@@ -92,15 +92,16 @@ export default function App() {
           </p>
         </div>
         <div className="grid grid-cols-4 gap-10">
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://warisannusantara.vercel.app/images/header/1.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://i.pinimg.com/736x/b9/78/07/b978077a8ca10c45603baf9bd7581379.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
-              <p className="text-white text-2xl font-bold">Seni Tari</p>
+              <p className="text-white text-2xl font-bold">Tari Tradisional</p>
             </div>
             <div className="absolute bottom-5 z-10 text-white w-[80%] text-sm">
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Numquam doloremque obcaecati,
+                Seni tari Indonesia mencakup ekspresi budaya melalui gerakan,
+                musik, dan kostum yang kaya dan beragam, dengan lebih dari 300
+                jenis tarian tradisional dan daerah.
               </p>
               <a
                 href=""
@@ -113,12 +114,12 @@ export default function App() {
           <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://warisannusantara.vercel.app/images/header/1.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
-              <p className="text-white text-2xl font-bold">Seni Tari</p>
+              <p className="text-white text-2xl font-bold">Upacara Adat</p>
             </div>
             <div className="absolute bottom-5 z-10 text-white w-[80%] text-sm">
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Numquam doloremque obcaecati,
+                Upacara adat Ritual turun-temurun untuk merayakan peristiwa
+                penting seperti pernikahan, kematian, atau musim panen.
               </p>
               <a
                 href=""
@@ -128,15 +129,16 @@ export default function App() {
               </a>
             </div>
           </div>
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://warisannusantara.vercel.app/images/header/1.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://i.pinimg.com/564x/54/0b/c5/540bc5f4d5b4dce24ebc1b74a88b3ef8.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
-              <p className="text-white text-2xl font-bold">Seni Tari</p>
+              <p className="text-white text-2xl font-bold">Seni Pertunjukan</p>
             </div>
             <div className="absolute bottom-5 z-10 text-white w-[80%] text-sm">
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Numquam doloremque obcaecati,
+                Seni pertunjukan Indonesia, termasuk wayang, lenong, ketoprak,
+                dan masih banyak lagi, merefleksikan kekayaan budaya dengan
+                beragamnya.
               </p>
               <a
                 href=""
@@ -146,15 +148,15 @@ export default function App() {
               </a>
             </div>
           </div>
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://warisannusantara.vercel.app/images/header/1.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://i.pinimg.com/564x/67/78/27/6778279febaa2c01b77a531128a9e1dd.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
-              <p className="text-white text-2xl font-bold">Seni Tari</p>
+              <p className="text-white text-2xl font-bold">Kuliner Khas</p>
             </div>
             <div className="absolute bottom-5 z-10 text-white w-[80%] text-sm">
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Numquam doloremque obcaecati,
+                Kuliner Indonesia, kaya ragam dan cita rasa lezat, mencerminkan
+                keanekaragaman budaya dan tradisi kuliner lokal.
               </p>
               <a
                 href=""
