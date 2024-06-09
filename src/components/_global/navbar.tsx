@@ -1,4 +1,5 @@
 import { IconSun } from "@irsyadadl/paranoid";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -9,15 +10,28 @@ export default function Navbar() {
       <div className="flex items-center gap-5">
         <ul className="flex gap-10 border-r-2 border-[#111] pr-6">
           <li>
-            <a
-              href=""
-              className="text-red-500 relative font-semibold after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-[3px] after:bg-red-500 after:rounded-full"
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 relative font-semibold after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-[3px] after:bg-red-500 after:rounded-full"
+                  : "relative font-semibold"
+              }
             >
               Beranda
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="">Berita</a>
+            <NavLink
+              to="/news"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 relative font-semibold after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-[3px] after:bg-red-500 after:rounded-full"
+                  : "relative font-semibold"
+              }
+            >
+              Berita
+            </NavLink>
           </li>
           <li>
             <a href="">Event</a>
