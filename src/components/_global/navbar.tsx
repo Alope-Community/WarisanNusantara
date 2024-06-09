@@ -17,16 +17,13 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="">Destinasi</a>
+            <a href="">Berita</a>
           </li>
           <li>
-            <a href="">Jelajah</a>
+            <a href="">Event</a>
           </li>
           <li>
-            <a href="">Sejarah dan Budaya</a>
-          </li>
-          <li>
-            <a href="">Peta Panduan</a>
+            <a href="">Peta Interaktif</a>
           </li>
         </ul>
         <div className="shadow-md flex items-center justify-center rounded-full w-[40px] h-[40px]">

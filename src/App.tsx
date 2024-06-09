@@ -1,8 +1,19 @@
 // import React from "react";
-
+import { useState } from "react";
 import Navbar from "./components/_global/navbar";
+import {
+  IconCalendar,
+  IconEye,
+  IconHeart,
+  IconPaper,
+  IconMessages,
+  IconTicket,
+  IconLocation,
+} from "@irsyadadl/paranoid";
 
 export default function App() {
+  const [tabActive, setTabActive] = useState("news");
+
   return (
     <>
       <Navbar />
@@ -180,16 +191,359 @@ export default function App() {
         <h4 className="font-semibold mt-10 text-xl text-white">Joko Widodo</h4>
         <small className="text-white">Presiden Republik Indonesia</small>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
+      <section className="mb-20">
+        <div className=" lg:px-20 md:px-10 px-5 mt-10">
+          <button
+            className={`rounded text-red-500 bg-gray-100 px-10 py-2 ${
+              tabActive == "news" ? "border" : ""
+            } border-red-500 inline-flex gap-5 mr-5`}
+            onClick={() => {
+              setTabActive("news");
+            }}
+          >
+            <IconPaper />
+            Berita
+          </button>
+          <button
+            className={`rounded text-red-500 bg-gray-100 px-10 py-2 ${
+              tabActive == "event" ? "border" : ""
+            } border-red-500 inline-flex gap-5 mr-5`}
+            onClick={() => {
+              setTabActive("event");
+            }}
+          >
+            <IconCalendar />
+            Event
+          </button>
+        </div>
+
+        {tabActive == "news" ? (
+          <section>
+            <div className="grid lg:grid-cols-5 gap-10 items-center lg:px-20 md:px-10 px-5 mt-10">
+              <div className="h-[350px] w-full rounded-md overflow-hidden lg:col-span-2">
+                <img
+                  src="https://warisannusantara.vercel.app/images/header/3.jpg"
+                  alt=""
+                  className="object-cover h-full w-full"
+                  data-aos-once="true"
+                  data-aos="fade-left"
+                />
+              </div>
+              <div
+                className="lg:col-span-3"
+                data-aos-once="true"
+                data-aos="fade-right"
+              >
+                <h5 className="text-red-500 font-semibold md:mb-5 mb-3 md:text-base text-sm">
+                  RAGAM BERITA
+                </h5>
+                <span>
+                  <h2 className="font-bold md:text-3xl text-gray-800 text-xl">
+                    {
+                      "INDONESIA DENGAN KEBERAGAMAN BUDAYA NUSANTARA YANG MENDUNIA"
+                    }
+                  </h2>
+                </span>
+                <p className="text-gray-800 mt-5 md:text-base text-[12px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Blanditiis quasi tempore incidunt architecto maxime dolore
+                  quo? Nihil laborum saepe et, officia laboriosam accusantium
+                  dicta eius unde, eos, quisquam hic deserunt.
+                </p>
+                <div className="flex gap-5 mt-10 text-gray-600 md:text-base text-sm">
+                  <span className="flex gap-2 items-center">
+                    <IconEye />
+                    <small>2.000 views</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconHeart />
+                    <small>2.000 suka</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconMessages />
+                    <small>2.000 komentar</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="grid lg:grid-cols-5 gap-10 items-center lg:px-20 md:px-10 px-5 mt-10">
+              <div className="h-[350px] w-full rounded-md overflow-hidden lg:col-span-2">
+                <img
+                  src="https://warisannusantara.vercel.app/images/header/3.jpg"
+                  alt=""
+                  className="object-cover h-full w-full"
+                  data-aos-once="true"
+                  data-aos="fade-left"
+                />
+              </div>
+              <div
+                className="lg:col-span-3"
+                data-aos-once="true"
+                data-aos="fade-right"
+              >
+                <h5 className="text-red-500 font-semibold md:mb-5 mb-3 md:text-base text-sm">
+                  RAGAM BERITA
+                </h5>
+                <span>
+                  <h2 className="font-bold md:text-3xl text-gray-800 text-xl">
+                    {
+                      "INDONESIA DENGAN KEBERAGAMAN BUDAYA NUSANTARA YANG MENDUNIA"
+                    }
+                  </h2>
+                </span>
+                <p className="text-gray-800 mt-5 md:text-base text-[12px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Blanditiis quasi tempore incidunt architecto maxime dolore
+                  quo? Nihil laborum saepe et, officia laboriosam accusantium
+                  dicta eius unde, eos, quisquam hic deserunt.
+                </p>
+                <div className="flex gap-5 mt-10 text-gray-600 md:text-base text-sm">
+                  <span className="flex gap-2 items-center">
+                    <IconEye />
+                    <small>2.000 views</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconHeart />
+                    <small>2.000 suka</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconMessages />
+                    <small>2.000 komentar</small>
+                  </span>
+                </div>
+
+                {/* <div className="lg:flex hidden gap-5 md:justify-end justify-center mt-5">
+              <button className="flex items-center justify-center rounded-full w-[30px] h-[30px] dark:hover:bg-gray-800 ">
+                <IconChevronLeft />
+              </button>
+              <button className="flex items-center justify-center rounded-full w-[30px] h-[30px] dark:hover:bg-gray-800 ">
+                <IconChevronRight />
+              </button>
+            </div> */}
+              </div>
+            </div>
+          </section>
+        ) : (
+          <section>
+            <div className="grid lg:grid-cols-5 gap-10 items-center lg:px-20 md:px-10 px-5 mt-10">
+              <div className="h-[350px] w-full rounded-md overflow-hidden lg:col-span-2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63368.913786928504!2d108.4005254933701!3d-6.943412765018405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1631a2e8c157%3A0x4170001fab845472!2sKec.%20Cigugur%2C%20Kabupaten%20Kuningan%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1717932215334!5m2!1sid!2sid"
+                  loading="lazy"
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div
+                className="lg:col-span-3"
+                data-aos-once="true"
+                data-aos="fade-right"
+              >
+                <h5 className="text-red-500 font-semibold md:mb-5 mb-3 md:text-base text-sm">
+                  RAGAM EVENT
+                </h5>
+                <span>
+                  <h2 className="font-bold md:text-3xl text-gray-800 text-xl">
+                    UPACARA SEREN TAUN
+                  </h2>
+                </span>
+                <p className="text-gray-800 mt-5 md:text-base text-[12px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Blanditiis quasi tempore incidunt architecto maxime dolore
+                  quo? Nihil laborum saepe et, officia laboriosam accusantium
+                  dicta eius unde, eos, quisquam hic deserunt.
+                </p>
+                <div className="flex gap-5 mt-10 text-gray-600 md:text-base text-sm">
+                  <span className="flex gap-2 items-center">
+                    <IconTicket />
+                    <small>Gratis</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconCalendar />
+                    <small>12 Des 2024</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconLocation />
+                    <small>Kuningan</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="grid lg:grid-cols-5 gap-10 items-center lg:px-20 md:px-10 px-5 mt-10">
+              <div className="h-[350px] w-full rounded-md overflow-hidden lg:col-span-2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63368.913786928504!2d108.4005254933701!3d-6.943412765018405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1631a2e8c157%3A0x4170001fab845472!2sKec.%20Cigugur%2C%20Kabupaten%20Kuningan%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1717932215334!5m2!1sid!2sid"
+                  loading="lazy"
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div
+                className="lg:col-span-3"
+                data-aos-once="true"
+                data-aos="fade-right"
+              >
+                <h5 className="text-red-500 font-semibold md:mb-5 mb-3 md:text-base text-sm">
+                  RAGAM EVENT
+                </h5>
+                <span>
+                  <h2 className="font-bold md:text-3xl text-gray-800 text-xl">
+                    UPACARA SEREN TAUN
+                  </h2>
+                </span>
+                <p className="text-gray-800 mt-5 md:text-base text-[12px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Blanditiis quasi tempore incidunt architecto maxime dolore
+                  quo? Nihil laborum saepe et, officia laboriosam accusantium
+                  dicta eius unde, eos, quisquam hic deserunt.
+                </p>
+                <div className="flex gap-5 mt-10 text-gray-600 md:text-base text-sm">
+                  <span className="flex gap-2 items-center">
+                    <IconTicket />
+                    <small>Gratis</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconCalendar />
+                    <small>12 Des 2024</small>
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <IconLocation />
+                    <small>Kuningan</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        <div className="flex justify-center mt-16">
+          <a
+            href=""
+            className="bg-red-500 text-white px-10 py-3 rounded-full hover:bg-red-400"
+          >
+            Show More
+          </a>
+        </div>
+
+        {/* <section className="lg:grid hidden grid-cols-3 gap-10 px-20 mt-10">
+          <div>
+            <img
+              src="https://warisannusantara.vercel.app/images/festivalbali.jpeg"
+              alt="news1"
+              className="h-[250px] object-cover w-full rounded"
+            />
+
+            <span>
+              <h3 className="mt-3 text-xl font-bold">{"Bali Arts Festival"}</h3>
+            </span>
+            <div className="my-5 flex gap-5">
+              <span className="flex gap-2 items-center text-gray-600">
+                <IconGraduate />
+                <small>Ilham Hafidz</small>
+              </span>
+              <span className="flex gap-2 items-center text-gray-600">
+                <IconCalendar />
+                <small>07 Des 2023</small>
+              </span>
+            </div>
+            <p className="text-gray-700 mt-2 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              at illo hic sunt quia doloremque nam aperiam officia iusto
+              quibusdam ipsam asperiores repellendus quod dignissimos
+              consequatur totam provident, vitae delectus!
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://warisannusantara.vercel.app/images/festivalbali.jpeg"
+              alt="news1"
+              className="h-[250px] object-cover w-full rounded"
+            />
+
+            <span>
+              <h3 className="mt-3 text-xl font-bold">{"Bali Arts Festival"}</h3>
+            </span>
+            <div className="my-5 flex gap-5">
+              <span className="flex gap-2 items-center text-gray-600">
+                <IconGraduate />
+                <small>Ilham Hafidz</small>
+              </span>
+              <span className="flex gap-2 items-center text-gray-600">
+                <IconCalendar />
+                <small>07 Des 2023</small>
+              </span>
+            </div>
+            <p className="text-gray-700 mt-2 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              at illo hic sunt quia doloremque nam aperiam officia iusto
+              quibusdam ipsam asperiores repellendus quod dignissimos
+              consequatur totam provident, vitae delectus!
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://warisannusantara.vercel.app/images/festivalbali.jpeg"
+              alt="news1"
+              className="h-[250px] object-cover w-full rounded"
+            />
+
+            <span>
+              <h3 className="mt-3 text-xl font-bold">{"Bali Arts Festival"}</h3>
+            </span>
+            <div className="my-5 flex gap-5">
+              <span className="flex gap-2 items-center text-gray-600">
+                <IconGraduate />
+                <small>Ilham Hafidz</small>
+              </span>
+              <span className="flex gap-2 items-center text-gray-600">
+                <IconCalendar />
+                <small>07 Des 2023</small>
+              </span>
+            </div>
+            <p className="text-gray-700 mt-2 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              at illo hic sunt quia doloremque nam aperiam officia iusto
+              quibusdam ipsam asperiores repellendus quod dignissimos
+              consequatur totam provident, vitae delectus!
+            </p>
+          </div>
+        </section> */}
+      </section>
+
+      <footer className="bg-gray-900 px-20 pt-20 pb-5 grid grid-cols-5 text-white gap-20">
+        <div className="col-span-2">
+          <h3 className="text-white text-xl font-semibold">
+            WARISAN NUSANTARA
+          </h3>
+          <p className="text-gray-100 text-sm mt-5">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+            recusandae perspiciatis saepe neque exercitationem dolorum ipsa
+            porro nostrum dignissimos, itaque quisquam consequatur expedita quo
+            autem tenetur, excepturi distinctio sequi deleniti?
+          </p>
+        </div>
+        <div className="flex gap-20 col-span-3">
+          <div>
+            <h4 className="font-semibold text-xl">Navigation</h4>
+            <ul className="mt-3">
+              <li>Home</li>
+              <li>Home</li>
+              <li>Home</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold text-xl">Social Media</h4>
+            <ul className="mt-3">
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </div>
+        <div className="col-span-5">
+          <hr />
+          <p className="mt-5 text-sm">Copyright &copy; 2024 by ALOPE</p>
+        </div>
+      </footer>
     </>
   );
 }
