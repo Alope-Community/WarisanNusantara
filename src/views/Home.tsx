@@ -1,5 +1,5 @@
 // import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   IconCalendar,
   IconEye,
@@ -12,6 +12,10 @@ import {
 
 export default function Home() {
   const [tabActive, setTabActive] = useState("news");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -191,8 +195,8 @@ export default function Home() {
       </section>
 
       <section className="mb-20">
-        <div className=" lg:px-20 md:px-10 px-5 mt-10">
-          <button
+        <div className=" lg:px-20 md:px-10 px-5 mt-10 flex gap-20">
+          {/* <button
             className={`rounded text-red-500 bg-gray-100 px-10 py-2 ${
               tabActive == "news" ? "border" : ""
             } border-red-500 inline-flex gap-5 mr-5`}
@@ -202,8 +206,42 @@ export default function Home() {
           >
             <IconPaper />
             Berita
+          </button> */}
+          <button
+            className="flex gap-5 items-center mb-5 mt-20"
+            onClick={() => {
+              setTabActive("news");
+            }}
+          >
+            <span
+              className={`w-[45px] h-[45px] flex items-center justify-center rounded-xl ${
+                tabActive == "news"
+                  ? "bg-red-500 text-white"
+                  : "border border-red-500 text-red-500"
+              }`}
+            >
+              <IconPaper className="w-[30px] h-[30px]" />
+            </span>
+            <h3 className="text-2xl font-semibold">Berita</h3>
           </button>
           <button
+            className="flex gap-5 items-center mb-5 mt-20"
+            onClick={() => {
+              setTabActive("event");
+            }}
+          >
+            <span
+              className={`w-[45px] h-[45px] flex items-center justify-center rounded-xl ${
+                tabActive == "event"
+                  ? "bg-red-500 text-white"
+                  : "border border-red-500 text-red-500"
+              }`}
+            >
+              <IconCalendar className="w-[30px] h-[30px]" />
+            </span>
+            <h3 className="text-2xl font-semibold">Event</h3>
+          </button>
+          {/* <button
             className={`rounded text-red-500 bg-gray-100 px-10 py-2 ${
               tabActive == "event" ? "border" : ""
             } border-red-500 inline-flex gap-5 mr-5`}
@@ -213,7 +251,7 @@ export default function Home() {
           >
             <IconCalendar />
             Event
-          </button>
+          </button> */}
         </div>
 
         {tabActive == "news" ? (

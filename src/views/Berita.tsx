@@ -1,12 +1,14 @@
 import {
   IconCalendar,
   IconChevronRight,
-  IconDashboard,
   IconEnvelope,
+  IconListBullets,
   IconMapFill,
+  IconTrendingChart2,
 } from "@irsyadadl/paranoid";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Pagination from "../components/_global/pagination";
 
 export default function Berita() {
   useEffect(() => {
@@ -15,7 +17,10 @@ export default function Berita() {
 
   return (
     <>
-      <header className="mt-10 mx-auto grid lg:grid-cols-4 gap-10 pt-20 lg:px-20 md:px-5 px-3">
+      <section className="bg-gradient-to-r from-red-500 to-red-400 pt-36 pb-10 px-20 text-white">
+        <h1 className="font-semibold text-3xl">RAGAM BERITA</h1>
+      </section>
+      <header className=" mx-auto grid lg:grid-cols-4 gap-10 pt-20 lg:px-20 md:px-5 px-3">
         <div
           className="lg:col-span-3 lg:h-[600px] md:h-[400px] h-[300px] bg-cover relative z-10 flex items-end md:p-10 p-4 after:content-[''] after:absolute after:inset-0 after:bg-black/40 after:-z-10 bg-bottom rounded overflow-hidden"
           style={{
@@ -88,10 +93,12 @@ export default function Berita() {
           <div className="grid lg:grid-cols-4 md:gap-10">
             <div className="lg:col-span-3">
               <div className="flex justify-between items-center mb-5">
-                <span className="flex gap-2 items-center text-red-500 text-xl font-semibold">
-                  <IconDashboard />
-                  <h2>TRENDING</h2>
-                </span>
+                <div className="flex gap-5 items-center">
+                  <span className="bg-red-500 text-white w-[50px] h-[50px] flex items-center justify-center rounded-xl">
+                    <IconTrendingChart2 className="w-[30px] h-[30px]" />
+                  </span>
+                  <h3 className="text-2xl font-semibold">TRENDING</h3>
+                </div>
                 <span className="flex items-center gap-2 text-sm hover:underline">
                   <a href="#">View More</a>
                   <IconChevronRight />
@@ -159,6 +166,12 @@ export default function Berita() {
         <hr className="my-10 " />
         <section className="grid lg:grid-cols-4 gap-20 mt-10">
           <div className="lg:col-span-3 md:w-auto w-[95%]">
+            <div className="flex gap-5 items-center mb-5">
+              <span className="bg-red-500 text-white w-[50px] h-[50px] flex items-center justify-center rounded-xl">
+                <IconListBullets className="w-[30px] h-[30px]" />
+              </span>
+              <h3 className="text-2xl font-semibold">LIST BERITA</h3>
+            </div>
             <div className="md:grid md:grid-cols-5 items-center lg:gap-10 md:gap-5 md:mb-5 mb-16">
               <div className="md:col-span-2">
                 <img
@@ -264,56 +277,7 @@ export default function Berita() {
               </div>
             </div>
 
-            <div className="flex gap-1 justify-center mt-10">
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                &laquo;
-              </a>
-              <a
-                href="#"
-                className="text-white bg-red-500 py-1 md:px-4 px-3 md:text-base text-sm rounded"
-              >
-                1
-              </a>
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                2
-              </a>
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                3
-              </a>
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                4
-              </a>
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                5
-              </a>
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                6
-              </a>
-              <a
-                href="#"
-                className="text-black py-1 md:px-4 px-3 md:text-base text-sm rounded hover:text-white hover:bg-red-400"
-              >
-                &raquo;
-              </a>
-            </div>
+            <Pagination />
           </div>
           <div className="lg:block hidden">
             <img

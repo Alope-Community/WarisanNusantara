@@ -34,10 +34,16 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <a href="">Event</a>
-          </li>
-          <li>
-            <a href="">Peta Interaktif</a>
+            <NavLink
+              to="/event"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 relative font-semibold after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-[3px] after:bg-red-500 after:rounded-full"
+                  : "relative font-semibold"
+              }
+            >
+              Event
+            </NavLink>
           </li>
         </ul>
         <div className="shadow-md flex items-center justify-center rounded-full w-[40px] h-[40px]">
