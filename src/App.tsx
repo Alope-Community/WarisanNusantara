@@ -17,8 +17,8 @@ export default function App() {
         </Routes>
       </Router>
 
-      <footer className="bg-gray-900 px-20 pt-20 pb-5 grid grid-cols-5 text-white gap-20">
-        <div className="col-span-2">
+      <footer className="bg-gray-900 lg:px-20 md:px-10 px-5 pt-20 pb-5 grid md:grid-cols-5 grid-cols-1 text-white gap-20">
+        <div className="md:col-span-2">
           <h3 className="text-white text-xl font-semibold">
             WARISAN NUSANTARA
           </h3>
@@ -29,13 +29,13 @@ export default function App() {
             autem tenetur, excepturi distinctio sequi deleniti?
           </p>
         </div>
-        <div className="flex gap-20 col-span-3">
+        <div className="flex gap-20 md:col-span-3">
           <div>
             <h4 className="font-semibold text-xl">Navigation</h4>
             <ul className="mt-3">
-              <li>Home</li>
-              <li>Home</li>
-              <li>Home</li>
+              <li>Beranda</li>
+              <li>Berita</li>
+              <li>Event</li>
             </ul>
           </div>
           <div>
@@ -47,7 +47,7 @@ export default function App() {
             </ul>
           </div>
         </div>
-        <div className="col-span-5">
+        <div className="md:col-span-5">
           <hr />
           <p className="mt-5 text-sm">Copyright &copy; 2024 by ALOPE</p>
         </div>

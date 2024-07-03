@@ -19,12 +19,12 @@ export default function Home() {
 
   return (
     <>
-      <header className="mt-20 relative grid grid-cols-2 pt-10 px-10 max-h-[700px] overflow-y-hidden after:absolute after:bg-gradient-to-t after:from-white after:to-white/10 after:w-full after:h-[130px] after:bottom-0">
+      <header className="mt-20 relative grid lg:grid-cols-2 pt-10 lg:px-10 px-5 lg:max-h-[700px] max-h-screen overflow-y-hidden after:absolute after:bg-gradient-to-t after:from-white after:to-white/10 after:w-full after:h-[130px] after:bottom-0">
         <div className="h-full flex-col justify-center items-center pt-20">
           <h4 className="text-2xl font-semibold text-red-500 mb-5">
             Indonesia Kaya
           </h4>
-          <h1 className="font-semibold text-[#111] text-5xl leading-[60px] mb-16">
+          <h1 className="font-semibold text-[#111] lg:text-5xl text-4xl lg:leading-[60px] mb-16">
             Telusuri Pesona dan <br /> Keberagaman Budaya Indonesia <br /> yang
             Memukau
           </h1>
@@ -32,7 +32,7 @@ export default function Home() {
             Jelajahi Sekarang
           </a>
         </div>
-        <div className="grid grid-cols-2 gap-5 rotate-3 -mt-20 overflow-hidden">
+        <div className="grid grid-cols-2 gap-5 lg:rotate-3 lg:-mt-20 mt-20 overflow-hidden">
           <div className="grid grid-cols-1 gap-5 animate-scroll-to-t">
             <div className="row-span-2 h-[500px] rounded-md overflow-hidden">
               <img
@@ -92,11 +92,13 @@ export default function Home() {
 
       {/*  */}
 
-      <section className="mt-32 px-10">
+      <section className="mt-32 md:px-10 px-5">
         <div className="text-center mb-10">
           <p className="text-red-500">Indonesia Kaya</p>
-          <h2 className="text-4xl font-semibold">Kekayaan Budaya Indonesia</h2>
-          <p className="text-sm w-[50%] mx-auto text-gray-700 mt-3">
+          <h2 className="md:text-4xl text-3xl font-semibold">
+            Kekayaan Budaya Indonesia
+          </h2>
+          <p className="text-sm lg:w-1/2 md:w-[80%] w-full mx-auto text-gray-700 mt-3">
             Keragaman budaya Indonesia mencerminkan kekayaan dan keberagaman
             melibatkan warisan sejarah, tradisi, dan nilai-nilai yang tercermin
             dalam setiap lapisan masyarakat. Dengan lebih dari 300 suku dan
@@ -104,8 +106,8 @@ export default function Home() {
             tarian, musik, dan seni rupa yang memukau.
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-10">
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://i.pinimg.com/736x/b9/78/07/b978077a8ca10c45603baf9bd7581379.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+          <div className="rounded-md overflow-hidden lg:h-[550px] h-[400px] bg-center relative p-5 bg-[url('https://i.pinimg.com/736x/b9/78/07/b978077a8ca10c45603baf9bd7581379.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
               <p className="text-white text-2xl font-bold">Tari Tradisional</p>
@@ -124,7 +126,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://warisannusantara.vercel.app/images/header/1.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+          <div className="rounded-md overflow-hidden lg:h-[550px] h-[400px] bg-center relative p-5 bg-[url('https://warisannusantara.vercel.app/images/header/1.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
               <p className="text-white text-2xl font-bold">Upacara Adat</p>
@@ -142,7 +144,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://i.pinimg.com/564x/54/0b/c5/540bc5f4d5b4dce24ebc1b74a88b3ef8.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+          <div className="rounded-md overflow-hidden lg:h-[550px] h-[400px] bg-center relative p-5 bg-[url('https://i.pinimg.com/564x/54/0b/c5/540bc5f4d5b4dce24ebc1b74a88b3ef8.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
               <p className="text-white text-2xl font-bold">Seni Pertunjukan</p>
@@ -161,7 +163,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="rounded-md overflow-hidden h-[550px] relative p-5 bg-[url('https://i.pinimg.com/564x/67/78/27/6778279febaa2c01b77a531128a9e1dd.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
+          <div className="rounded-md overflow-hidden lg:h-[550px] h-[400px] bg-center relative p-5 bg-[url('https://i.pinimg.com/564x/67/78/27/6778279febaa2c01b77a531128a9e1dd.jpg')] bg-cover after:content-[''] after:absolute after:inset-0 after:bg-black/30">
             <div className="absolute z-10">
               <p className="text-sm text-red-500 font-semibold">Ragam</p>
               <p className="text-white text-2xl font-bold">Kuliner Khas</p>
@@ -184,11 +186,11 @@ export default function Home() {
 
       {/*  */}
 
-      <section className="bg-red-500 py-20 text-center mt-20">
-        <p className="text-white font-semibold text-3xl">
+      <section className="bg-red-500 py-20 text-center mt-20 lg:px-20 md:px-10 px-5">
+        <p className="text-white font-semibold lg:text-3xl md:text-2xl">
           “Keberagaman suku dan budaya Indonesia ini menjadi kekayaan <br />{" "}
-          besar bangsa sekaligus juga kekuatan besar, <br /> bukan menjadi
-          kelemahan.”
+          besar bangsa sekaligus juga kekuatan besar,{" "}
+          <br className="lg:block inline" /> bukan menjadi kelemahan.”
         </p>
         <h4 className="font-semibold mt-10 text-xl text-white">Joko Widodo</h4>
         <small className="text-white">Presiden Republik Indonesia</small>
